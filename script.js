@@ -1,3 +1,8 @@
+require('dotenv').config();
+
+const apiKey = process.env.API_SECRET;
+console.log(`Your API key is: ${apiKey}`);
+
 const canvas = document.getElementById('barChart');
 const ctx = canvas.getContext('2d');
 
